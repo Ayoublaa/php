@@ -1,0 +1,127 @@
+/* Body background and general styling */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8; /* Light background for the page */
+  font-family: 'Arial', sans-serif;
+}
+
+/* Form background */
+.login-dark {
+  height: 100vh; /* Full viewport height */
+  background: #ecf009 url(https://images.unsplash.com/photo-1516641051054-9df6a1aad654?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8Nnx8fGVufDB8fHx8fA%3D%3D); /* Set background image */
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+/* Form styling */
+.login-dark form {
+  max-width: 500px;
+  width: 90%;
+  background: url(https://img.freepik.com/premium-vector/pizza-pattern_14328-1.jpg?w=740); /* Pizza-themed background for the form */
+  background-size: cover; /* Ensure the background image fits */
+  background-position: center;
+  background-color: rgba(255, 255, 255, 0.8); /* Slight transparency */
+  padding: 40px;
+  border-radius: 8px; /* Rounded corners */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #333; /* Darker text for readability */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+}
+
+/* Illustration for the form (locked icon) */
+.login-dark .illustration {
+  text-align: center;
+  padding: 15px 0 20px;
+  font-size: 100px;
+  color: #e74c3c; /* Red color for illustration */
+}
+
+/* Input fields styling */
+.login-dark form .form-control {
+  background: none;
+  border: 2px solid #ccc; /* Light gray border for input */
+  border-radius: 4px; /* Rounded corners for input fields */
+  padding: 12px; /* Padding inside the input fields */
+  margin-bottom: 20px; /* Spacing between fields */
+  font-size: 16px; /* Larger font size for input */
+  color: rgb(255, 255, 255); /* Dark text for visibility */
+  transition: all 0.3s ease-in-out; /* Smooth transition on focus */
+}
+
+/* Focus state for inputs */
+.login-dark form .form-control:focus {
+  border-color: #fcf80e; /* Yellow border when focused */
+  box-shadow: 0 0 8px rgba(252, 248, 14, 0.8); /* Yellow glow effect */
+  outline: none; /* Remove default outline */
+}
+
+/* Button styling */
+.login-dark form .btn-primary {
+  background-color: #fcf80e; /* Yellow background for the button */
+  border: none;
+  border-radius: 4px;
+  padding: 12px;
+  box-shadow: none;
+  margin-top: 20px; /* Space between inputs and button */
+  font-weight: bold;
+  font-size: 18px;
+  color: #333; /* Dark text for visibility */
+  cursor: pointer;
+}
+
+/* Button hover and active states */
+.login-dark form .btn-primary:hover,
+.login-dark form .btn-primary:active {
+  background-color: #fd0000; /* Red color when hovering */
+  transform: translateY(-2px); /* Button lift effect */
+}
+
+.login-dark form .btn-primary:active {
+  transform: translateY(1px); /* Button depression effect when clicked */
+}
+
+/* Forgot password link */
+.login-dark form .forgot {
+  display: block;
+  text-align: center;
+  font-size: 12px;
+  color: #fff;
+  opacity: 0.9;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+/* Hover effect for the forgot password link */
+.login-dark form .forgot:hover,
+.login-dark form .forgot:active {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 600px) {
+  .login-dark form {
+      padding: 30px;
+      max-width: 90%;
+      left: 10px; /* Adjust left margin on smaller screens */
+  }
+
+  .login-dark .illustration {
+      font-size: 80px; /* Smaller icon on small screens */
+  }
+
+  .login-dark form .form-control {
+      padding: 10px; /* Less padding for inputs on smaller screens */
+      font-size: 14px; /* Smaller text size */
+  }
+
+  .login-dark form .btn-primary {
+      padding: 10px; /* Less padding for the button */
+      font-size: 16px; /* Smaller button text */
+  }
+}
